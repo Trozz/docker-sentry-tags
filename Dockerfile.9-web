@@ -1,2 +1,4 @@
 FROM sentry:9
-CMD ['run', 'web']
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["run", "web"]
+
